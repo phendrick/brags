@@ -16,6 +16,10 @@ Developed a GitHub Action for automated code reviews
 
 * [https://github.com](https://github.com)
 
+Built an awesome new tool to help people record their achivements at work 💻
+
+* [https://freeagent.com](https://freeagent.com)
+
 
 ### Impact
 
