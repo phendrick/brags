@@ -1,6 +1,11 @@
 # Achievements
 ## 2024-02
 
+### Hack days
+
+My Hack Days brag 🎉
+
+
 ### Tools
 
 Developed a GitHub Action for automated code reviews
