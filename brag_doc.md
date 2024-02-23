@@ -1,13 +1,6 @@
 # Achievements
 ## 2024-02
 
-### Impact
-
-My Hack Days brag 🎉
-
-* [https://freeagent.com](https://freeagent.com)
-
-
 ### Tools
 
 Developed a GitHub Action for automated code reviews
