@@ -7,6 +7,8 @@ Published a comprehensive guide on advanced Rails patterns
 
 * [https://rubyonrails.org](https://rubyonrails.org)
 
+Contributed to an open-source project critical to our backend stack
+
 
 ### Tools
 
