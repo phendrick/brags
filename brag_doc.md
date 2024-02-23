@@ -1,28 +1,8 @@
 # Achievements
-## 2024-01
-
-### Cats
-
-Something else I did
-
-* [https://google.com](https://google.com)
-
-
-### Dogs
-
-Something else I did
-
-* [https://google.com](https://google.com)
-
 ## 2024-02
 
-### Hello world
+### Domain
 
-hello 2
+Published a comprehensive guide on advanced Rails patterns
 
-hello 1
-
-
-### Uncategorised
-
-Nice 😅
+* [https://rubyonrails.org](https://rubyonrails.org)
