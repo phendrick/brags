@@ -1,0 +1,54 @@
+name: create-master-json-and-brag-file
+run-name: ${{ github.actor }} triggered the action to consolidate brags and create brag doc
+on:
+  push:
+    paths:
+      - '**/brags/**'
+
+jobs:
+  runs-consolidate-json-script:
+    name: consolidate json files
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+      - run: bundle install
+
+      - name: run create-master-json script
+        run: ruby scripts/create-master-json.rb
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "update master json consolidation file" --allow-empty)
+          git push
+
+  runs-brag-doc-creation-script:
+    name: create brag doc
+    runs-on: ubuntu-latest
+    needs: runs-consolidate-json-script
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v4
+
+      - run: git pull
+
+      - uses: ruby/setup-ruby@v1
+      - run: bundle install
+
+      - name: run brag doc creation script
+        run: ruby scripts/builder.rb
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "update brag docs" --allow-empty)
+          git push
