@@ -1,15 +1,6 @@
 # Achievements
 ## 2024-02
 
-### Domain
-
-Published a comprehensive guide on advanced Rails patterns
-
-* [https://rubyonrails.org](https://rubyonrails.org)
-
-Contributed to an open-source project critical to our backend stack
-
-
 ### Tools
 
 Developed a GitHub Action for automated code reviews
@@ -19,6 +10,19 @@ Developed a GitHub Action for automated code reviews
 Built an awesome new tool to help people record their achivements at work 💻
 
 * [https://freeagent.com](https://freeagent.com)
+
+
+### Domain
+
+Contributed to an open-source project critical to our backend stack
+
+## 2024-01
+
+### Domain
+
+Published a comprehensive guide on advanced Rails patterns
+
+* [https://rubyonrails.org](https://rubyonrails.org)
 
 
 ### Impact
